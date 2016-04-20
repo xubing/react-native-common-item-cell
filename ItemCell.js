@@ -1,14 +1,14 @@
 import React, { View, Text, Image, TouchableHighlight, PropTypes, StyleSheet, PixelRatio } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-class ItemCell extends React.Component {
+class CommonItemCell extends React.Component {
   _renderDisclosureIndicator () {
     if (this.props.showDisclosureIndicator) {
       return <Icon style={styles.chevron} name='angle-right' size={22} />
     }
   }
 
-  _renderIcon () {
+  _renderLeft () {
     if (this.props.icon) {
       return (
         <View style={styles.iconContainer}>
@@ -17,6 +17,18 @@ class ItemCell extends React.Component {
             source={this.props.icon}
             resizeMode='cover'
           />
+          <View style={styles.paddingView} />
+        </View>
+      )
+    }
+    else if (this.props.title)
+    {
+      return (
+        <View style={styles.titleContainer}>
+          <View style={styles.paddingView} />
+          <Text style={styles.text}>
+            {this.props.title}
+          </Text>
           <View style={styles.paddingView} />
         </View>
       )
@@ -41,7 +53,7 @@ class ItemCell extends React.Component {
         style={styles.container}>
         <View style={styles.viewContainer}>
           <View style={styles.leftContainer}>
-            {this._renderIcon()}
+            {this._renderLeft()}
           </View>
           <View style={styles.bottomBorder}>
             <View style={styles.textContainer}>
@@ -57,10 +69,11 @@ class ItemCell extends React.Component {
   }
 }
 
-ItemCell.propTypes = {
+CommonItemCell.propTypes = {
   ...TouchableHighlight.propTypes,
   children: PropTypes.string.isRequired,
   showDisclosureIndicator: PropTypes.bool,
+  title:PropTypes.string, //title or icon
   icon: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.shape({
@@ -120,6 +133,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: 'white',
   },
+
+  titleContainer: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    backgroundColor: 'white',
+  },
   icon: {
     width: 29,
     height: 29,
@@ -127,4 +146,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default ItemCell
+export default CommonItemCell

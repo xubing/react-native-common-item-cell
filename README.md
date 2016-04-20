@@ -1,5 +1,6 @@
-# react-native-item-cell
-A React Native default iOS item cell. The cell grows with the inner text.
+# react-native-common-item-cell
+A React Native  item cell. The cell grows with the inner text.
+This project is forked from [react-native-item-cell](https://github.com/APSL/react-native-item-cell), I add the left title in it .
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/wiki/APSL/react-native-item-cell/itemcell.png" alt="ItemCell component screenshot" width="400">
@@ -11,7 +12,7 @@ A React Native default iOS item cell. The cell grows with the inner text.
 Install the package:
 
 ```bash
-$ npm i react-native-item-cell --save
+$ npm i react-native-common-item-cell --save
 ```
 
 Install ``FontAwesome`` from the awesome Joel Oblador's ``react-native-vector-icons``: https://github.com/oblador/react-native-vector-icons#installation
@@ -25,6 +26,12 @@ Install ``FontAwesome`` from the awesome Joel Oblador's ``react-native-vector-ic
 </ItemCell>
 ```
 
+```javascript
+<ItemCell title = {"Gender:"}>
+  Man
+</ItemCell>
+```
+
 ## Prop API
 
 | Prop | Type | Description |
@@ -32,6 +39,7 @@ Install ``FontAwesome`` from the awesome Joel Oblador's ``react-native-vector-ic
 |``showDisclosureIndicator`` | ``bool`` | Shows a small arrow at the right side of the cell. |
 |``icon`` | ``{uri: string}`` object or ``require()`` | URI to render left icon with an URL for the image source or ``require`` for a local image source. |
 |``children`` | ``string`` | The inner text to render. |
+|``title`` | ``string`` | The left title text to render. |
 
 ## License
 
