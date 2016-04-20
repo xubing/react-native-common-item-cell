@@ -10,7 +10,7 @@ var {
   StyleSheet,
   ListView,
 } = React;
-import ItemCell from 'react-native-item-cell';
+import ItemCell from  'react-native-common-item-cell'
 
 var items = React.createClass({
   getInitialState: function() {

@@ -13,8 +13,8 @@
   "keywords": [
     "react-native",
     "react-component",
-    "ios"
-    "cell"
+    "ios",
+    "cell",
     "item"
   ],
   "dependencies": {
@@ -24,9 +24,9 @@
   "author": "Alvaro Medina Ballester, ",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/APSL/react-native-item-cell/issues"
+    "url": "https://github.com/xubing/react-native-common-item-cell/issues"
   },
-  "homepage": "https://github.com/APSL/react-native-item-cell#readme",
+  "homepage": "https://github.com/xubing/react-native-common-item-cell/blob/master/README.md",
   "devDependencies": {
     "babel-eslint": "^4.1.3",
     "eslint": "^1.6.0",
