@@ -3,7 +3,7 @@ A React Native  item cell. The cell grows with the inner text.
 This project is forked from [react-native-item-cell](https://github.com/APSL/react-native-item-cell), I add the left title in it .
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/wiki/APSL/react-native-item-cell/itemcell.png" alt="ItemCell component screenshot" width="400">
+<img src="https://github.com/xubing/react-native-common-item-cell/blob/master/Example/items/screen1.png" alt="ItemCell component screenshot" width="400">
 </p>
 
 
