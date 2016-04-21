@@ -21,6 +21,10 @@ Install ``FontAwesome`` from the awesome Joel Oblador's ``react-native-vector-ic
 ## Usage
 
 ```javascript
+import ItemCell from 'react-native-common-item-cell';
+```
+
+```javascript
 <ItemCell>
   Item
 </ItemCell>
