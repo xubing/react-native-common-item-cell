@@ -1,6 +1,6 @@
 {
   "name": "react-native-common-item-cell",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native common item cell. This original project is from react-native-item-cell. becouse that can't add a title,so fork it and release a new one",
   "main": "ItemCell.js",
   "scripts": {
